@@ -19,7 +19,6 @@ module "argocd_dev_root" {
   git_source_path    = "demo-dev/applications"
   git_source_repoURL = "git@github.com:maxellxt-lgtm/argocd.git"
 
-  depends_on = [module.argocd_dev]
 }
 
 # Can be deployed ONLY after ArgoCD deployment: depends_on = [module.argocd_prod]
@@ -29,5 +28,4 @@ module "argocd_prod_root" {
   git_source_path    = "demo-prod/applications"
   git_source_repoURL = "git@github.com:maxellxt-lgtm/argocd.git"
 
-  depends_on = [module.argocd_prod]
 }
