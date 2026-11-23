@@ -1,5 +1,5 @@
-variable "eks_cluster_name" {
-  description = "EKS Cluster name to deploy ArgoCD"
+variable "kube_context" {
+  description = "Kubernetes context name from ~/.kube/config"
   type        = string
 }
 
