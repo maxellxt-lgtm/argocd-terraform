@@ -17,7 +17,7 @@ module "argocd_dev_root" {
   source             = "./terraform_argocd_root_eks"
   kube_context       = "demo-dev"
   git_source_path    = "demo-dev/applications"
-  git_source_repoURL = "git@github.com:maxellxt-lgtm/argocd-terraform.git"
+  git_source_repoURL = "git@github.com:maxellxt-lgtm/argocd.git"
 
 }
 
@@ -26,6 +26,6 @@ module "argocd_prod_root" {
   source             = "./terraform_argocd_root_eks"
   kube_context       = "demo-prod"
   git_source_path    = "demo-prod/applications"
-  git_source_repoURL = "git@github.com:maxellxt-lgtm/argocd-terraform.git"
+  git_source_repoURL = "git@github.com:maxellxt-lgtm/argocd.git"
 
 }
