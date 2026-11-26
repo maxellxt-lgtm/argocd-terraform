@@ -13,4 +13,5 @@ resource "helm_release" "argocd" {
   version          = var.chart_version
   create_namespace = true
   values           = [file("${path.module}/argocd.yaml")]
+  timeout = 900
 }
